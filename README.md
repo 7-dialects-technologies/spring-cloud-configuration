@@ -10,6 +10,8 @@ To run the configuration server as Spring boot application
 ```
 git clone https://github.com/7-dialects-technologies/spring-cloud-configuration.git
 
+./gradlew bootRun
+
 ```
 
 
