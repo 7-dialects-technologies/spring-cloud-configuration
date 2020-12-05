@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: configuration-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/7dialects/sample/configuration-repo.git
+
+server:
+  port: 8888
+
+management:
+  server:
+    port: 8889
+    ssl:
+      enabled: false
+
+logging:
+  level:
+    root: INFO
