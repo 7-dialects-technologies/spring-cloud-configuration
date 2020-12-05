@@ -14,6 +14,20 @@ git clone https://github.com/7-dialects-technologies/spring-cloud-configuration.
 
 ```
 
+### Docker
+```
+docker run -p 8888:8888 7dialects/configuration-server:tagname
+```
+*tagname: it is a latest version of 7dialects configuration server
+
+This will run the config server in port 8888. But it has a dummy configuration reposity configured to fetch the external configuration.
+
+To override the properties, you can run your conf as below
+
+```
+docker run -p 9000:9000 7dialects/configuration-server:tagname  --server.port:9000
+```
+
 
 
 
